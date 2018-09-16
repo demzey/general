@@ -1,0 +1,19 @@
+<html>
+    <body>
+    <script>
+       let div = document.createElement("div");
+
+       div.className = "alert alert-success";
+        div.innerHTML = "<strong>Hi there!</strong> You've read an important message";
+
+        document.body.appendChild(div);
+
+        let ins = document.createElement("ins");
+        ins.className = "insert-a-class";
+        ins.innerHTML = "This is an inserted text";
+
+        document.body.insertBefore(ins, div);
+
+    </script>
+</body>
+</html>

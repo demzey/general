@@ -1,0 +1,17 @@
+<script>
+
+let chessBoard = (grid) => {
+let block="";
+
+    for(let i = 0; i <= grid; i++){
+        for(let g = 0; g <= grid; g++){
+        ((i+g) % 2 === 0) ? block +='#' : block+=' ';
+        
+    }
+    block += '\n';
+} 
+console.log(block);
+}
+chessBoard(9);
+
+</script>

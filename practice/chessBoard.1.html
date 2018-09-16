@@ -1,0 +1,27 @@
+<script>
+
+let chessBoard = (grid) => {
+    let block="";
+    let g = 0;
+
+    for(let i = 0; i <= grid; i++){
+        
+    // backslack n will create a new row in for the board
+    rowFunc();
+    block += '\n';
+    } 
+console.log(block);
+}
+chessBoard(9);
+
+let rowFunc = (grid) => {
+
+    //this for loop will be run first 
+    for(let g = 0; g <= grid; g++){
+        //if the value of the number is even it will create a number sign else it will a blank space
+        ((i+g) % 2 === 0) ? block +='#' : block+=' ';
+        }
+
+}
+
+</script>

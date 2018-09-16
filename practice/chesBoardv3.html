@@ -1,0 +1,26 @@
+<script>
+
+/* WORK ONLY ON ODD NUMBERS */
+
+let message ='';
+// if i is less than or equal to nine, value of i increments
+for (let block = 0; block <= 81; block++) {
+    // console.log(message);
+    // if message length is less than or equal to 9, create a new line
+    if (message.length % 9 === 0) { 
+        message += '\n';
+        // console.log(message);
+    // if i is divisible by 2, add a hash symbol to the message
+    } else if (block % 2 === 0) { 
+        message += '⬛'; 
+        // console.log(message);
+    // else add a space to the message
+    } else {
+        message += '⬜'; 
+        // console.log(message);     
+    }
+    // console.log(message);
+} 
+console.log(message);
+
+</script>   

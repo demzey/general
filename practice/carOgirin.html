@@ -1,0 +1,33 @@
+<script>
+
+//object car properties and value
+const CAR = {
+Mitsubishi: 'Japan',
+Honda: 'Japan',
+Ford: 'US',
+Chevrolet: 'US',
+Peugot: 'EU' 
+}
+
+//function for selecting car origin
+let carOrigin = (carMaker) => {
+
+
+    //country is the variable for country selection
+    let country = 'Japan';
+
+    //to select all the property values in object car
+    for (let key in carMaker) {
+        //select if the property value is equal to the selected country
+        if (carMaker[key] === country) {
+        console.log(`Car Maker ${key} Corporation originated from ${country}`);
+        // }  else {console.log(`There's no available car Maker in ${country}`);
+    }   
+}
+}
+// insert a new property and value to object car
+CAR.Sarao = 'Philippines';
+
+carOrigin(CAR);
+
+</script>

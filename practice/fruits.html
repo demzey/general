@@ -1,0 +1,24 @@
+<script>
+//object apple properties and value
+const FRUIT = {
+    name: 'apple',
+    Color: 'Red',
+    Calories: 78,
+    Taste: 'Sweet',
+
+
+}
+
+let appleFacts = (appleDesc) => {
+    //to select all the property values in object FRUIT
+    for (let key in appleDesc){
+        //select all property value that having number datatype
+        if (typeof appleDesc[key] === 'number') {
+            console.log(`A medium size ${FRUIT.name} contains ${appleDesc[key]} ${key}.`)
+        }
+    }
+}
+
+appleFacts(FRUIT);
+
+</script>

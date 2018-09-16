@@ -1,0 +1,22 @@
+<script>
+
+
+
+let fizzBuzz = (num) => {
+    /* this condition must run first to avoid getting other output,
+     because if the next two condition run first, there is a posibility that the number might by divisible by either 3 or 5*/
+    for (let i =0; i <num; i++){
+        (i % 3 === 0 && num % 5 ===0) ? console.log('FizzBuzz')
+        // if the number is divisible by 3 and not divisible by 5
+        : (i % 3 === 0) ? console.log('Fizz')
+        // if the number is divisible by 5 and not divisible by 3
+        : (i % 5 === 0) ? console.log('Buzz')
+        // if the number is not divisible by 3 or 5 / not a valid number
+        : console.log(`Number ${i} is not divisible by 3 or 5`)    
+    }
+    
+}
+
+fizzBuzz(111);
+
+</script>

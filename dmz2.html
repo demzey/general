@@ -1,0 +1,24 @@
+<html>
+    <table id="table">
+            <tr>
+                <td> Your age: </td>
+                <td>
+                    <label>
+                        <input type="radio" name="age" value="adult">from 18 to 50
+                    </label>
+                    <label>
+                            <input type="radio" name="age" value="senior">more than 50
+                    </label>
+            
+                </td>
+            
+            </tr>
+    </table>  
+    <script>
+    let inputs = table.getElementsByTagName('input');
+
+    for (let input of inputs) {
+        alert( input.value + ': ' + input.checked);
+    }
+    </script>
+</html>
